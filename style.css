@@ -1,0 +1,694 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arima', cursive;
+    background-color: #f0f5f5;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFD39B;
+}
+
+/* Home Section */
+#home-section {
+    height: 130vh;
+    background: url('Images/Calming_Background_Image.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.home-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.home-content h1 {
+    font-size: 3.1rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+}
+
+.quick-access .btn {
+    background-color: #6ABF69;
+    color: #FFF;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quick-access .btn:hover {
+    background-color: #4a9b50;
+    transform: scale(1.05);
+}
+
+/* Featured Section */
+.featured {
+    display: block!important;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+}
+
+.featured-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; 
+}
+
+.featured-item {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 250px;
+}
+
+.featured-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.featured-item h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.featured-item p {
+    color: #555;
+}
+
+/* Hide all sections by default */
+section {
+    display: none;
+} 
+
+/* Show the home section initially */
+#home-section {
+    display: block; 
+}
+
+
+/* Plants Section */
+#plants-section {
+    padding: 3rem 2rem;
+    background-color: #f9fafc;
+}
+
+#plants-section h2, #plants-section h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.plant-search {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#plant-search-bar {
+    padding: 10px;
+    width: 50%;
+    font-size: 1.2rem;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+}
+
+.plant-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.plant-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.plant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.plant-card h4 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #27ae60;
+}
+
+.plant-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+/* Yoga Section Styling */
+#yogas-section {
+    padding: 3rem 2rem;
+    background-color: #f9fafc;
+    color: #2c3e50;
+}
+
+/* Dropdown styling */
+.yoga-dropdown {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.yoga-dropdown label {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.yoga-dropdown select {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #2c3e50;
+}
+
+/* Search bar for Yoga */
+.yoga-search {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#yoga-search-bar {
+    padding: 10px;
+    width: 50%;
+    font-size: 1.2rem;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+}
+
+/* Yoga Grid styling */
+.yoga-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.yoga-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.yoga-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.yoga-card h4 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #27ae60;
+}
+
+.yoga-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+
+/* Developer Section Styling */
+#about-developer-section {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+}
+
+.developer-columns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.developer-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-crop {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image-crop img {
+    width: 100%;
+    height: auto;
+}
+
+.developer-card h3 {
+    color: #27ae60;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.contact-info p,
+.social-links a {
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.send-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #1e874b;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #27ae60;
+}
+
+/* Mentor Slideshow Styling */
+.mentor-slideshow {
+    position: relative;
+    max-width: 400px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.mentor-slide {
+    display: none;
+}
+
+.mentor-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mentor-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.mentor-card h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.mentor-card p {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+}
+
+.prev {
+    left: -40px;
+}
+
+.next {
+    right: -40px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+
+/* Profile Section Styling */
+.profile-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .user-bio {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .edit-profile-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-profile-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .user-details {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Favorites Accordion Styling */
+  .favorites-section h3,
+  .activity-feed h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .accordion .accordion-item {
+    margin: 10px 0;
+  }
+  
+  .accordion-button {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .accordion-button:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    display: none;
+    background-color: #eee;
+  }
+  
+  .activity-feed {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+
+
+
+  /* Profile Section */
+.profile-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.liked-items {
+    margin-top: 2rem;
+}
+
+.liked-items h3 {
+    margin: 1.5rem 0 0.5rem;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#login-form input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+
+
+
+
+#chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+#chat-log {
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+}
+
+.bot-message {
+    background-color: #a3d2ca;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.user-message {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+#user-input {
+    display: flex;
+    padding: 10px;
+}
+
+#user-message {
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#send-btn {
+    width: 20%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}
+
+#close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#close-btn:hover {
+    background-color: #d32f2f;
+}
+
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the icon stays on top */
+}
+
+#chatbot-icon:hover {
+    background-color: #45a049;
+}

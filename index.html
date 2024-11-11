@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <div class="logo"><a href="/">Virtual Herbal Garden</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home-section" id="home-link">Home</a></li>
+                <li><a href="#plants-section" id="plants-link">Plants</a></li>
+                <li><a href="#yogas-section" id="yoga-link">Yoga</a></li>
+                <li><a href="#about-developer" id="about-link">About Developer</a></li>
+                <li><a href="#profile" id="profile-link">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page Content -->
+<section id="home-section">
+    <div class="home-content">
+        <h1 id="tagline"></h1> <!-- Dynamic Tagline -->
+        <div class="quick-access">
+            <a href="#plants-section" class="btn plants">Explore Plants</a>
+            <a href="#yogas-section" class="btn yoga">Explore Yoga</a>
+        </div>
+    </div>
+
+
+<!-- Featured Section (move this outside the home-content div) -->
+<section class="featured">
+    <h2>Featured Plants and Yoga Poses</h2>
+    <div class="featured-grid">
+        <!-- Example Featured Plant -->
+        <div class="featured-item">
+            <img src="Images/aloevera_1.jpg" alt="Aloe Vera">
+            <h3>Aloe Vera</h3>
+            <p>Medicinal plant known for its skin-healing properties.</p>
+        </div>
+        <!-- Example Featured Yoga Pose -->
+        <div class="featured-item">
+            <img src="YogaImages/Butterfly Pose.webp" alt="Butterfly Pose">
+            <h3>Butterfly Pose (Baddha Konasana)</h3>
+            <p>Yoga pose that stretches the inner thighs, groin, and knees.</p>
+        </div>
+    </div>
+</section>
+</section>
+
+
+
+    <!-- Plant Section -->
+<section id="plants-section" style="display: none;">
+    <h2>Explore Plants</h2>
+    
+    <!-- Search Bar -->
+    <div class="plant-search">
+        <input type="text" id="plant-search-bar" placeholder="Search for plants..." onkeyup="searchPlants()">
+    </div>
+
+    <!-- Medicinal Plants Subsection -->
+    <h3>Medicinal Plants and Ayurvedic Plants</h3>
+    <div class="plant-grid" id="medicinal-plants">
+        <!-- Example Plant -->
+        <div class="plant-card">
+            <img src="Images/aloevera_1.jpg" alt="Aloe Vera">
+            <h4>Aloe Vera</h4>
+            <p><strong>Scientific Name:</strong> Aloe barbadensis miller</p>
+            <p><strong>Benefits:</strong> Known for its healing and skin-soothing properties.</p>
+            <p><strong>How to Grow:</strong> Aloe vera grows well in dry, sandy soil with plenty of sunlight.</p>
+            <p><strong>Uses in Medicine:</strong> Aloe gel is used for burns, skin irritation, and as a moisturizer.</p>
+        </div>
+        <!-- Add more plants here -->
+        <div class="plant-card">
+            <img src="Images/tulsi.jpg" alt="Tulsi (Holy Basil)">
+            <h4>Tulsi (Holy Basil)</h4>
+            <p><strong>Scientific Name:</strong> Ocimum tenuiflorum</p>
+            <p><strong>Benefits:</strong> Boosts immunity, reduces stress, and helps with respiratory issues.</p>
+            <p><strong>How to Grow:</strong> Holy basil thrives in indirect bright light and at least four hours of sunlight a day is required. Tulsi grows well in loamy and fertile soil with good drainage.</p>
+            <p><strong>Uses in Medicine:</strong> Leaves used in tea or as a natural remedy for cough and cold. </p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/neem.jpg" alt="Neem">
+            <h4>Neem</h4>
+            <p><strong>Scientific Name:</strong> Azadirachta indica </p>
+            <p><strong>Benefits:</strong> Antibacterial, anti-inflammatory, and helps in wound healing.</p>
+            <p><strong>How to Grow:</strong> It grows best on deep, well-drained sandy soils. It can be grown anywhere using both seeds and cuttings.</p>
+            <p><strong>Uses in Medicine:</strong> Neem oil for skin conditions; leaves used in skincare products. </p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/turmeric.jpg" alt="Turmeric">
+            <h4>Turmeric</h4>
+            <p><strong>Scientific Name:</strong> Curcuma longa</p>
+            <p><strong>Benefits:</strong> Anti-inflammatory, supports joint health, and boosts immunity.</p>
+            <p><strong>How to Grow:</strong> Use turmeric rhizomes (roots) from the market and slice them into tiny buds. Fill a pot with 3 inches of acidic potting soil and lay the rhizome flat between two soil layers. Water the pot until it's visibility wet every 2-3 days. Slip the pot into a large plastic bag to encourage humidity and growth.</p>
+            <p><strong>Uses in Medicine:</strong> Powdered in cooking, topical paste for skin, or in teas.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/Ashwagandha.avif" alt="Ashwagandha">
+            <h4>Ashwagandha</h4>
+            <p><strong>Scientific Name: </strong>Withania somnifera</p>
+            <p><strong>Benefits: </strong>Reduces stress, enhances mood, and improves physical endurance.</p>
+            <p><strong>How to Grow: </strong>Ashwagandha grows well in sandy loam or light red soil having pH 7.5 to 8.0 with good drainage. Black soils or such heavy soils are suitable for cultivation. It is grown as late rainy season (kharif) crop. The semi-tropical areas receiving 500 to 750 mm rainfall are suitable for its cultivation as rainfed crop.</p>
+            <p><strong>Uses in Medicine: </strong>Roots powdered in supplements, teas, or mixed with milk.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/peppermint.jpg" alt="Peppermint">
+            <h4>Peppermint</h4>
+            <p><strong>Scientific Name: </strong>Mentha × piperita</p>
+            <p><strong>Benefits: </strong>Aids digestion, relieves headaches, and reduces nausea.</p>
+            <p><strong>How to Grow: </strong>Peppermint prefers well-draining, loose, and organically rich soil. It can be typically harvested 2-3 times during the plant's growing season.</p>
+            <p><strong>Uses in Medicine: </strong>Leaves used in tea; essential oil for inhalation or massage.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/ginger.jpg" alt="Ginger">
+            <h4>Ginger</h4>
+            <p><strong>Scientific Name: </strong>Zingiber officinale</p>
+            <p><strong>Benefits: </strong>Reduces nausea, boosts digestion, and supports respiratory health.</p>
+            <p><strong>How to Grow: </strong>Water gently with a fine rose watering can. Place the tray in a warm, dry and light place for a few days and allow the shoots to develop. Cover the lower part of the ginger shoots with more compost. Once the shoots are growing strongly pot the whole ginger plant into a pot filled with compost.</p>
+            <p><strong>Uses in Medicine: </strong>Root in teas, food, or as an extract in supplements.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/garlic.png" alt="Garlic">
+            <h4>Garlic</h4>
+            <p><strong>Scientific Name: </strong>Allium sativum</p>
+            <p><strong>Benefits: </strong>Lowers blood pressure, reduces cholesterol, and boosts heart health.</p>
+            <p><strong>How to Grow: </strong>Choose a sunny spot in your garden with well-draining soil, and plant garlic cloves in the ground root-side down about 2-inches (5-cm) deep. After planting garlic, water it well and mulch around the plants to help retain moisture. Garlic is a reasonably low-maintenance crop but requires regular watering, especially during dry spells.</p>
+            <p><strong>Uses in Medicine: </strong>Bulbs in cooking or as supplements for health benefits.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/eucalyptus.jpg" alt="Eucalyptus">
+            <h4>Eucalyptus</h4>
+            <p><strong>Scientific Name: </strong>Eucalyptus sp</p>
+            <p><strong>Benefits: </strong>Relieves respiratory issues, reduces inflammation, and has antiseptic properties.</p>
+            <p><strong>How to Grow: </strong>Eucalyptus grows in full sun, requiring at least six hours of direct sun per day. Plant in an airy, sunny location that is sheltered from the wind.</p>
+            <p><strong>Uses in Medicine: </strong>Leaves and oil for inhalation, topical applications, or in teas.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/lavender.png" alt="Lavender">
+            <h4>Lavender</h4>
+            <p><strong>Scientific Name: </strong>Lavandula</p>
+            <p><strong>Benefits: </strong>Reduces anxiety, promotes sleep, and soothes skin.</p>
+            <p><strong>How to Grow: </strong>Plant lavender in a location that receives full sun, or at least six hours of direct sunlight, in well-draining soil.</p>
+            <p><strong>Uses in Medicine: </strong>Essential oil for aromatherapy; flowers in tea or baths.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/fenugreek.png" alt="Fenugreek">
+            <h4>Fenugreek</h4>
+            <p><strong>Scientific Name: </strong>Trigonella foenum-graecum</p>
+            <p><strong>Benefits: </strong>Improves digestion, supports lactation, and regulates blood sugar.</p>
+            <p><strong>How to Grow: </strong>Sow fenugreek from late spring to late summer, whenever a bed will be unused for more than eight weeks. Direct seed into cultivated soil so that the seeds are about 2 inches (5 cm) apart and one-half inch (1 cm) deep. Thin to 6 inches (15 cm) apart in all directions.</p>
+            <p><strong>Uses in Medicine: </strong>Seeds in food, powdered in supplements, or brewed as tea.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="Images/Chamomile.jpg" alt="Chamomile">
+            <h4>Chamomile</h4>
+            <p><strong>Scientific Name: </strong>Matricaria chamomilla</p>
+            <p><strong>Benefits: </strong>Calms the nervous system, promotes sleep, and aids digestion.</p>
+            <p><strong>How to Grow: </strong>Chamomile can grow in any container that is at least 6 inches deep. It requires ample drainage holes, using well-draining, pre-moistened potting.</p>
+            <p><strong>Uses in Medicine: </strong>Flowers brewed in tea or applied topically for skin issues.</p>
+        </div>
+    </div>
+
+    <!-- Ayurvedic Plants Subsection -->
+    <!-- <h3>Ayurvedic Plants</h3>
+    <div class="plant-grid" id="ayurvedic-plants">
+        Example Plant
+        <!-- <div class="plant-card">
+            <img src="path_to_tulsi_image" alt="Tulsi">
+            <h4>Tulsi</h4>
+            <p><strong>Scientific Name:</strong> Ocimum tenuiflorum</p>
+            <p><strong>Benefits:</strong> Improves immunity, fights infections, and purifies the blood.</p>
+            <p><strong>How to Grow:</strong> Tulsi thrives in warm climates and requires minimal care.</p>
+            <p><strong>Uses in Medicine:</strong> Tulsi is used in teas, medicines, and for spiritual purposes.</p>
+        </div> -->
+        <!-- Add more plants here -->
+    <!-- </div> --> -->
+</section>
+
+
+<!-- Yoga Section -->
+<section id="yogas-section" style="display: none; padding-top: 5rem;">
+    <h2 style="display: none;">Explore Yoga Asanas</h2>
+
+    <!-- Dropdown for Subsections -->
+    <div class="yoga-dropdown" style="padding-top: 2rem;">
+        <label for="yoga-category">Choose a category:</label>
+        <select id="yoga-category" onchange="showYogaCategory()">
+            <option value="relaxation">Yoga for Relaxation</option>
+            <option value="strength">Yoga for Strength</option>
+            <option value="flexibility">Yoga for Flexibility</option>
+        </select>
+    </div>
+
+    <!-- Search Bar for Yoga Asanas -->
+    <div class="yoga-search">
+        <input type="text" id="yoga-search-bar" placeholder="Search for yoga poses..." onkeyup="searchYoga()">
+    </div>
+
+    <!-- Subsections with yoga asanas -->
+    <div class="yoga-category" id="yoga-relaxation">
+        <h3>Yoga for Relaxation</h3>
+        <div class="yoga-grid">
+            <div class="yoga-card">
+                <img src="YogaImages/Childs-Pose.webp" alt="Child's Pose">
+                <h4>Child's Pose (Balasana)</h4>
+                <p><strong>Benefits:</strong> Helps reduce stress and fatigue, relaxes the spine, shoulders, and neck.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Kneel on the floor, sit back on your heels.</li>
+                    <li>Stretch your arms forward and rest your forehead on the ground.</li>
+                    <li>Hold the pose for 1-2 minutes while breathing deeply.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have knee injuries.</p>
+            </div>
+            <!-- Add more relaxation yoga asanas here -->
+            <div class="yoga-card">
+                <img src="YogaImages/savasana.jpg" alt="Savasana">
+                <h4>Savasana (Corpse Pose)</h4>
+                <p><strong>Benefits:</strong> Deep relaxation, stress relief, improved sleep.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Lie flat on your back with arms at your sides, palms facing up.</li>
+                    <li>Close your eyes, relax your body, and focus on your breath.</li>
+                    <li>Stay in this pose for 5-15 minutes.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have difficulty lying flat; use props if needed.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Legs-up-the-Wall-Pose.webp" alt="Legs-Up-The-Wall Pose (Viparita Karani)">
+                <h4>Legs-Up-The-Wall Pose (Viparita Karani)</h4>
+                <p><strong>Benefits:</strong> Reduces stress, improves circulation, and alleviates tired legs.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Sit sideways next to a wall, swing your legs up onto the wall as you lie back.</li>
+                    <li>Adjust your position so your hips are close to the wall.</li>
+                    <li>Relax your arms at your sides and breathe deeply.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have eye problems like glaucoma or serious neck issues.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Paschimottanasana.jpg" alt="Seated Forward Bend (Paschimottanasana)">
+                <h4>Seated Forward Bend (Paschimottanasana)</h4>
+                <p><strong>Benefits:</strong> Stretches the spine and hamstrings, calms the nervous system.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Sit with your legs extended in front of you.</li>
+                    <li>Inhale, lift your arms overhead, then exhale and hinge at the hips to fold forward.</li>
+                    <li>Hold your feet or shins and relax your neck and shoulders.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have a herniated disc or severe lower back issues.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Reclining Bound Angle Pose.webp" alt="Reclining Bound Angle Pose (Supta Baddha Konasana)">
+                <h4>Reclining Bound Angle Pose (Supta Baddha Konasana)</h4>
+                <p><strong>Benefits:</strong> Opens the hips, relaxes the mind, relieves fatigue.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Lie on your back, bring the soles of your feet together, and let your knees fall open.</li>
+                    <li>Rest your arms at your sides or overhead.</li>
+                    <li>Use props under your knees for support if necessary.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Be cautious if you have hip or knee injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Supine Twist (Supta Matsyendrasana).jpeg" alt="Supine Twist (Supta Matsyendrasana)">
+                <h4>Supine Twist (Supta Matsyendrasana)</h4>
+                <p><strong>Benefits:</strong> Relieves spinal tension, aids digestion, and calms the nervous system.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Lie on your back, bring one knee to your chest.</li>
+                    <li>Twist the knee across your body to the opposite side, keeping your shoulders grounded.</li>
+                    <li>Extend the opposite arm out to the side and look towards it.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have severe spinal or neck issues.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/cat-cow-pose-page.jpg" alt="Cat-Cow Pose (Marjaryasana-Bitilasana)">
+                <h4>Cat-Cow Pose (Marjaryasana-Bitilasana)</h4>
+                <p><strong>Benefits:</strong> Enhances spinal flexibility, relieves tension, and calms the mind.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Start on all fours with wrists under shoulders and knees under hips.</li>
+                    <li>Inhale, arch your back (Cow Pose), then exhale and round your back (Cat Pose).</li>
+                    <li>Repeat the sequence for several breaths.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Be gentle if you have wrist or knee problems.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Bridge Pose.jpg" alt="Bridge Pose (Setu Bandhasana)">
+                <h4>Bridge Pose (Setu Bandhasana)</h4>
+                <p><strong>Benefits:</strong> Opens the chest, stretches the spine, and calms the brain.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Lie on your back, bend your knees, and place your feet flat on the floor.</li>
+                    <li>Press into your feet to lift your hips, clasp your hands under your back.</li>
+                    <li>Hold for a few breaths, then slowly lower your hips.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have neck or lower back injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Extended Triangle Pose.jpg" alt="Extended Triangle Pose (Utthita Trikonasana)">
+                <h4>Extended Triangle Pose (Utthita Trikonasana)</h4>
+                <p><strong>Benefits:</strong> Stretches the body, improves focus, and promotes relaxation.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Stand with your feet wide apart, turn one foot out.</li>
+                    <li>Extend your arms, hinge at the hip to reach forward, and place your hand on your shin or the floor.</li>
+                    <li>Extend your opposite arm towards the ceiling and look up.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have balance issues or severe back pain.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/puppy-pose.jpg" alt="Puppy Pose (Uttana Shishosana)">
+                <h4>Puppy Pose (Uttana Shishosana)</h4>
+                <p><strong>Benefits:</strong> Stretches the spine and shoulders, relieves tension.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Start on all fours, walk your hands forward, and lower your chest towards the floor.</li>
+                    <li>Keep your hips above your knees and rest your forehead or chin on the mat.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Be cautious with neck or shoulder injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Happy-Baby-Pose.jpg" alt="Happy Baby Pose (Ananda Balasana)">
+                <h4>Happy Baby Pose (Ananda Balasana)</h4>
+                <p><strong>Benefits:</strong> Opens the hips, relieves lower back pain, and calms the mind.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Lie on your back, draw your knees towards your chest.</li>
+                    <li>Grab the outside edges of your feet and gently pull your knees towards the armpits.</li>
+                    <li>Rock gently if it feels good.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have knee or hip injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/cobra-pose.jpg" alt="Cobra Pose (Bhujangasana)">
+                <h4>Cobra Pose (Bhujangasana)</h4>
+                <p><strong>Benefits:</strong> Strengthens the spine, opens the chest, and reduces fatigue.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Lie on your stomach, place your hands under your shoulders.</li>
+                    <li>Inhale and lift your chest, keeping your elbows slightly bent.</li>
+                    <li>Hold for a few breaths, then lower down.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have back or wrist issues.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="yoga-category" id="yoga-strength" style="display: none;">
+        <h3>Yoga for Strength</h3>
+        <div class="yoga-grid">
+
+            <div class="yoga-card">
+                <img src="YogaImages/plank pose.webp" alt="Plank Pose (Phalakasana)">
+                <h4>Plank Pose (Phalakasana)</h4>
+                <p><strong>Benefits:</strong> Strengthens the core, shoulders, arms, and back.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Start in a push-up position with your arms straight and hands under shoulders.</li>
+                    <li>Keep your body in a straight line from head to heels.</li>
+                    <li>Hold for 20-60 seconds.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have wrist or shoulder injuries.</p>
+            </div>
+            <!-- Add more strength yoga asanas here -->
+            <div class="yoga-card">
+                <img src="YogaImages/Warrior-2-Pose.webp" alt="Warrior II (Virabhadrasana II)">
+                <h4>Warrior II (Virabhadrasana II)</h4>
+                <p><strong>Benefits:</strong> Strengthens the legs, arms, and core; improves stamina.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Stand with feet wide apart, turn one foot out 90 degrees.</li>
+                    <li>Bend the front knee, keeping the thigh parallel to the floor.</li>
+                    <li>Extend arms out to the sides and gaze over the front hand.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have knee or hip injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Chair-pose.webp" alt="Chair Pose (Utkatasana)">
+                <h4>Chair Pose (Utkatasana)</h4>
+                <p><strong>Benefits:</strong> Strengthens the thighs, calves, and spine.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Stand with feet together, bend your knees, and lower your hips as if sitting on a chair.</li>
+                    <li>Extend your arms overhead and keep the back straight.</li>
+                    <li>Hold for 20-30 seconds.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Be cautious if you have knee or lower back issues.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Boat_Pose.webp" alt="Boat Pose (Navasana)">
+                <h4>Boat Pose (Navasana)</h4>
+                <p><strong>Benefits:</strong> Builds core strength and stability.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Sit on the floor with knees bent, feet flat.</li>
+                    <li>Lean back slightly, lift your feet off the floor, and balance on your sit bones.</li>
+                    <li>Extend your arms forward and straighten your legs.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have lower back or neck injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Four-Limbed Staff Pose.png" alt="Four-Limbed Staff Pose (Chaturanga Dandasana)">
+                <h4>Four-Limbed Staff Pose (Chaturanga Dandasana)</h4>
+                <p><strong>Benefits:</strong> Strengthens the arms, shoulders, and core.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Start in a plank position, lower your body halfway down, keeping elbows close to the body.</li>
+                    <li>Hold for a few seconds and then lower down completely or push back up.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have wrist, shoulder, or elbow injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Upward-Facing Dog.jpg" alt="Upward-Facing Dog (Urdhva Mukha Svanasana)">
+                <h4>Upward-Facing Dog (Urdhva Mukha Svanasana)</h4>
+                <p><strong>Benefits:</strong> Strengthens the arms, wrists, and spine.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Lie on your stomach, place hands under shoulders, and press into your palms to lift your chest.</li>
+                    <li>Straighten your arms and keep thighs off the floor.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have wrist or lower back issues.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Warrior III.jpg" alt="Warrior III (Virabhadrasana III)">
+                <h4>Warrior III (Virabhadrasana III)</h4>
+                <p><strong>Benefits:</strong> Strengthens the legs, core, and improves balance.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Stand on one leg, lean forward, and lift the opposite leg behind you.</li>
+                    <li>Extend your arms forward or to the sides for balance.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have balance issues or severe lower back pain.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Crow Pose.png" alt="Crow Pose (Bakasana)">
+                <h4>Crow Pose (Bakasana)</h4>
+                <p><strong>Benefits:</strong> Builds arm, wrist, and core strength.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Squat down, place hands on the floor, and lift your hips.</li>
+                    <li>Place your knees on your upper arms, shift your weight forward, and lift your feet off the floor.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have wrist or shoulder injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Side-plank-pose.jpg" alt="Side Plank (Vasisthasana)">
+                <h4>Side Plank (Vasisthasana)</h4>
+                <p><strong>Benefits:</strong> Strengthens the arms, core, and legs.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>From plank position, shift your weight onto one hand and rotate your body to the side.</li>
+                    <li>Stack your feet and extend the other arm towards the ceiling.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have wrist, elbow, or shoulder issues.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/bridge-pose.jpg" alt="Bridge Pose (Setu Bandhasana)">
+                <h4>Bridge Pose (Setu Bandhasana)</h4>
+                <p><strong>Benefits:</strong> Strengthens the back, glutes, and hamstrings.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Lie on your back, bend your knees, and place your feet flat on the floor.</li>
+                    <li>Press into your feet to lift your hips and clasp your hands under your back.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have neck or lower back issues.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Dolphin-Pose.jpeg" alt="Dolphin Pose">
+                <h4>Dolphin Pose</h4>
+                <p><strong>Benefits:</strong> Strengthens the arms, shoulders, and core.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Start in downward dog, lower your forearms to the ground.</li>
+                    <li>Keep your hips lifted and walk your feet in slightly.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have shoulder or neck injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/HandStand.webp" alt="Handstand (Adho Mukha Vrksasana)">
+                <h4>Handstand (Adho Mukha Vrksasana)</h4>
+                <p><strong>Benefits:</strong> Builds upper body and core strength.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Start in downward dog, shift your weight onto your hands.</li>
+                    <li>Kick your legs up towards the wall for balance.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have wrist, shoulder, or neck injuries.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="yoga-category" id="yoga-flexibility" style="display: none;">
+        <h3>Yoga for Flexibility</h3>
+        <div class="yoga-grid">
+
+            <div class="yoga-card">
+                <img src="YogaImages/Downward-Facing Dog.png" alt="Downward-Facing Dog (Adho Mukha Svanasana)">
+                <h4>Downward-Facing Dog (Adho Mukha Svanasana)</h4>
+                <p><strong>Benefits:</strong> Stretches the hamstrings, calves, spine, and shoulders.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Start on all fours, tuck your toes under, and lift your hips towards the ceiling.</li>
+                    <li>Straighten your legs, creating an inverted V-shape.</li>
+                    <li>Keep your head between your arms and breathe deeply.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have wrist, shoulder, or back injuries.</p>
+            </div>
+            <!-- Add more flexibility yoga asanas here -->
+            <div class="yoga-card">
+                <img src="YogaImages/Seated Forward Bend.jpg" alt="Seated Forward Bend (Paschimottanasana)">
+                <h4>Seated Forward Bend (Paschimottanasana)</h4>
+                <p><strong>Benefits:</strong> Stretches the spine, hamstrings, and calves.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Sit with your legs extended, inhale and lift your arms overhead.</li>
+                    <li>Exhale and hinge at the hips to reach towards your feet.</li>
+                    <li>Keep your back straight and hold for several breaths.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have severe lower back problems.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Pigeon Pose.jpg" alt="Pigeon Pose (Eka Pada Rajakapotasana)">
+                <h4>Pigeon Pose (Eka Pada Rajakapotasana)</h4>
+                <p><strong>Benefits:</strong> Opens the hips, stretches the thighs, groin, and psoas.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Start in downward dog, bring one knee forward and place it behind your hands.</li>
+                    <li>Extend the other leg back and lower your hips towards the floor.</li>
+                    <li>Hold for several breaths and switch sides.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have knee or hip injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Triangle Pose.jpg" alt="Triangle Pose (Trikonasana)">
+                <h4>Triangle Pose (Trikonasana)</h4>
+                <p><strong>Benefits:</strong> Stretches the legs, hips, spine, shoulders, and chest.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Stand with feet wide apart, turn one foot out.</li>
+                    <li>Extend your arms out and reach towards the front foot, placing the hand on the shin or floor.</li>
+                    <li>Look up at the extended arm and hold.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Be cautious if you have balance issues or severe back pain.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Butterfly Pose.webp" alt="Butterfly Pose (Baddha Konasana)">
+                <h4>Butterfly Pose (Baddha Konasana)</h4>
+                <p><strong>Benefits:</strong> Stretches the inner thighs, groin, and knees.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Sit with your feet together, knees bent, and drop your knees towards the floor.</li>
+                    <li>Hold your feet with your hands and gently press your knees down.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have knee injuries.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/cobra-pose.jpg" alt="Cobra Pose (Bhujangasana)">
+                <h4>Cobra Pose (Bhujangasana)</h4>
+                <p><strong>Benefits:</strong> Strengthens the spine, opens the chest, and reduces fatigue.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Lie on your stomach, place your hands under your shoulders.</li>
+                    <li>Inhale and lift your chest, keeping your elbows slightly bent.</li>
+                    <li>Hold for a few breaths, then lower down.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have back or wrist issues.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Camel Pose.jpeg" alt="Camel Pose (Ustrasana)">
+                <h4>Camel Pose (Ustrasana)</h4>
+                <p><strong>Benefits:</strong> Opens the chest, stretches the front body, and improves spinal flexibility.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Kneel with knees hip-width apart, place your hands on your lower back.</li>
+                    <li>Lean back and reach for your heels, lifting your chest.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have neck or lower back issues.</p>
+            </div>
+
+            <div class="yoga-card">
+                <img src="YogaImages/Half Lord of the Fishes Pose.jpg" alt="Half Lord of the Fishes Pose (Ardha Matsyendrasana)">
+                <h4>Half Lord of the Fishes Pose (Ardha Matsyendrasana)</h4>
+                <p><strong>Benefits:</strong> Stretches the spine, shoulders, and hips.</p>
+                <p><strong>Steps:</strong></p>
+                <ol>
+                    <li>Sit with legs extended, bend one knee and cross it over the other leg.</li>
+                    <li>Place the opposite elbow on the outside of the bent knee and twist your torso.</li>
+                </ol>
+                <p><strong>Precautions:</strong> Avoid if you have spinal or hip injuries.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- About Developer Section -->
+<section id="about-developer-section" style="display: none;" style="padding: 3rem 2rem;">
+    <!-- About Developer Page Content Here -->
+    <h2>About the Developers</h2>
+    <div class="developer-columns">
+        <!-- Developer 1 -->
+        <div class="developer-card">
+            <div class="image-crop">
+                <img src="Images/Suraj Gupta.png" alt="Developer 1">
+            </div>
+            <h3>Suraj Gupta</h3>
+            <p>Role in Project: Full Stack Developer</p>
+            <p>Bio: Passionate about creating impactful web experiences.</p>
+            <div class="contact-info">
+                <p>Contact: surajofficial394@gmail.com</p>
+                <textarea placeholder="Write a message to Suraj "></textarea>
+                <button class="send-btn">Send</button>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/surajvinodgupta7/" target="_blank"><img src="Images/linkedin.png" height="40" width="40"></a>
+                <a href="https://instagram.com" target="_blank"><img src="Images/instagram.png" alt="Suraj Instagram page" height="45" width="45"></a>
+                <a href="https://twitter.com" target="_blank"><img src="Images/twitter.png" alt="Suraj Twitter page" height="45" width="45"></a>
+            </div>
+        </div>
+
+        <!-- Developer 2 -->
+        <div class="developer-card">
+            <div class="image-crop">
+                <img src="Images/Eidan Ansari.jfif" alt="Developer 2">
+            </div>
+            <h3>Eidan Ansari</h3>
+            <p>Role in Project: Data Analyst</p>
+            <p>Bio: Enthusiastic coder with a passion for design.</p>
+            <div class="contact-info">
+                <p>Contact: eidanansari1@gmail.com</p>
+                <textarea placeholder="Write a message to Eidan"></textarea>
+                <button class="send-btn">Send</button>
+            </div>
+            <div class="social-links">
+                <a href="" target="_blank"><img src="Images/linkedin.png" height="40" width="40"></a>
+                <a href="https://instagram.com" target="_blank"><img src="Images/instagram.png" height="45" width="45"></a>
+                <a href="https://twitter.com" target="_blank"><img src="Images/twitter.png" height="45" width="45"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mentor Appreciation Slideshow -->
+    <div class="mentor-slideshow">
+        <button class="prev" onclick="showSlide(currentSlide - 1)">&#10094;</button>
+        <div class="mentor-slide" style="display: block;">
+            <div class="mentor-card">
+                <img src="Images/Dr Vinita Gaikwad.jfif" alt="Mentor 1">
+                <h4>Dr. Vinita Gaikwad</h4>
+                <p>Thank you for your guidance and support throughout the project.</p>
+            </div>
+        </div>
+        <div class="mentor-slide" style="display: none;">
+            <div class="mentor-card">
+                <img src="Images/Rashmi-Vipat.jpg" alt="Mentor 2">
+                <h4>Rashmi Vipat</h4>
+                <p>Your insights were invaluable to our success.</p>
+            </div>
+        </div>
+        <div class="mentor-slide" style="display: none;">
+            <div class="mentor-card">
+                <img src="Images/Anamika Dhawan.jpg" alt="Mentor 3">
+                <h4>Anamika Dhawan</h4>
+                <p>Grateful for your encouragement and mentorship.</p>
+            </div>
+        </div>
+        <button class="next" onclick="showSlide(currentSlide + 1)">&#10095;</button>
+    </div>
+</section>
+
+
+
+<!-- Profile Section -->
+<section id="profile-section" style="display: none;">
+    <!-- Profile Header -->
+  <div class="profile-header">
+    <div class="profile-pic">
+      <img src="path/to/user-profile-pic.jpg" alt="User Profile Picture">
+    </div>
+    <h2 class="user-name">User Name</h2>
+    <p class="user-bio">This is a short user bio.</p>
+    <button class="edit-profile-btn">Edit Profile</button>
+  </div>
+
+  <!-- User Details -->
+  <div class="user-details">
+    <p><strong>Email:</strong> user@example.com</p>
+    <p><strong>Location:</strong> City, Country</p>
+  </div>
+
+  <!-- Favorites Section -->
+  <div class="favorites-section">
+    <h3>Favorites</h3>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-button">Liked Plants</button>
+        <div class="accordion-content">
+          <p>Plant 1, Plant 2, Plant 3...</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">Liked Yoga Poses</button>
+        <div class="accordion-content">
+          <p>Yoga Pose 1, Yoga Pose 2, Yoga Pose 3...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Activity Feed (Optional) -->
+  <div class="activity-feed">
+    <h3>Recent Activity</h3>
+    <p>No recent activity yet.</p>
+  </div>
+</div>
+</section>
+
+
+<!-- Login/Registration Popup -->
+<div id="login-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2 id="popup-title">Login</h2>
+        <form id="login-form" onsubmit="handleLogin(event)">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" onclick="showRegistrationForm()">Register here</a></p>
+    </div>
+</div>
+
+
+
+<div id="chatbox" style="display: none;">
+    <div id="chat-log">
+        <div class="bot-message">Hello! How can I assist you today?</div>
+    </div>
+    <div id="user-input">
+        <input type="text" id="user-message" placeholder="Ask me about plants or yoga...">
+        <button id="send-btn">Send</button>
+    </div>
+    <!-- Close Button -->
+    <button id="close-btn">X</button>
+</div>
+
+<!-- Chatbot Open Icon -->
+<div id="chatbot-icon" onclick="openChatbox()">💬</div>
+
+
+
+    <script src="script.js"></script> <!-- Add this for JavaScript functionality -->
+</body>
+</html>
